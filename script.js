@@ -16,7 +16,7 @@ function randomIndex (list) {
  return  index;
 }
 
-study.style.display = "table";
+study.style.display = "none";
 
     const randomPronom = randomIndex(pronoms);
     const choosenPronom = pronoms[randomPronom];
