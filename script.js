@@ -16,6 +16,8 @@ function randomIndex (list) {
  return  index;
 }
 
+study.style.display = "table";
+
     const randomPronom = randomIndex(pronoms);
     const choosenPronom = pronoms[randomPronom];
     const choosenGroupe = groupes[randomIndex(groupes)];
