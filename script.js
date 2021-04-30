@@ -1,5 +1,6 @@
 const randomQuestion = document.getElementById('random-question');
 const answer = document.getElementById('answer');
+const study = document.getElementById('study');
 
 let check = document.getElementById('check');
 
@@ -8,7 +9,8 @@ const terminaisonEr = ["e", "es", "e", "e", "ons", "ez", "ent","ent"];
 const terminaisonIr = ["is", "is", "it", "it", "issons", "issez", "issent","issent"];
 const terminaisonRe = ["s", "s", "", "", "ons", "ez", "ent","ent"];
 const groupes = ["'first group'", "'second group'", "'third group'"];
-
+const responseBad = ["nononononono", "Mais kate c'est quoi ca ??!", "tu es NUL", "you suck", "no food for you tonight", "aie aie aie"];
+const responseGood = ["bravooo", "Tu es trop forte", "you the best!", "you awesome dou!", "so good....", "perfection"];
 function randomIndex (list) {
    const index = Math.floor(Math.random() * list.length)
  return  index;
@@ -21,21 +23,23 @@ function randomIndex (list) {
     const termEr = terminaisonEr[randomPronom];
     const termIr = terminaisonIr[randomPronom];
     const termRe = terminaisonRe[randomPronom];
-
+const good = responseGood[randomIndex(responseGood)];
+const bad = responseBad[randomIndex(responseBad)];
+console.log()
 
 function checkAnswer (){
     if (choosenGroupe == "'first group'" && answer.value == termEr) {
-        check.innerText = "Bravoooooo";
+        check.innerText = good;
             }
             else if (choosenGroupe == "'second group'" && answer.value == termIr) {
-                check.innerText = "Bravoooooo";
+                check.innerText = good;
                     }
                     else if (choosenGroupe == "'third group'" && answer.value == termRe ) {
-                        check.innerText = "Bravoooooo";
+                        check.innerText = good;
                             }
                             else {
-                                check.innerText = "Nope";
+                                check.innerHTML = bad + " you need to study!";
+study.style.display = "table";
                             }
 }
 
-answer.style.out

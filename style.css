@@ -33,7 +33,7 @@ input:focus {
 button{
     margin:10px;
     width:10%;
-    background-color: blue; /* Green */
+ background-color: blue; /* Green */
   border: none;
   border-radius: 10px;
   color: white;
@@ -44,6 +44,42 @@ button{
   font-size: 16px;
 }
 
+button:focus {
+    outline: none;
+    background-color: rgba(0, 0, 255, 0.762);
+}
+
 span{
     color:blue;
+}
+table {
+    margin-top: 25px;
+    width: 30%;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Recursive', monospace;
+    font-size:16px;
+}
+td {
+background-color: rgb(235, 246, 255);
+    text-align: center;
+   border: 2px solid white;
+   padding:5px;
+}
+
+th{
+    height: 40px;
+}
+
+thead,tfoot {
+
+    background-color: rgba(0, 0, 255, 0.762);
+    color: #fff;
+ 
+}
+
+#study{
+    display:none;
 }
