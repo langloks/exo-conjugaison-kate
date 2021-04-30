@@ -1,5 +1,6 @@
 const randomQuestion = document.getElementById('random-question');
 const answer = document.getElementById('answer');
+
 let check = document.getElementById('check');
 
 const pronoms = ["'je'", "'tu'", "'il'", "'elle'", "'nous'", "'vous'", "'ils'", "'elles'"];
@@ -16,7 +17,7 @@ function randomIndex (list) {
     const randomPronom = randomIndex(pronoms);
     const choosenPronom = pronoms[randomPronom];
     const choosenGroupe = groupes[randomIndex(groupes)];
-    randomQuestion.innerText = "conjugate " + choosenPronom + " with " + choosenGroupe;
+    randomQuestion.innerHTML = "conjugate " + "<span>"+choosenPronom +"</span>" +" with " + "<span>"+choosenGroupe+"</span>";
     const termEr = terminaisonEr[randomPronom];
     const termIr = terminaisonIr[randomPronom];
     const termRe = terminaisonRe[randomPronom];
@@ -36,3 +37,5 @@ function checkAnswer (){
                                 check.innerText = "Nope";
                             }
 }
+
+answer.style.out
