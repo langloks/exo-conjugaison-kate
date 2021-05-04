@@ -29,17 +29,20 @@ const good = responseGood[randomIndex(responseGood)];
 const bad = responseBad[randomIndex(responseBad)];
 check.innerText ="";
 answer.value = "";
-study.style.display = "none";
-
+ study.style.display = "none";
 document.getElementById('buttonCheck').addEventListener("click", function checkAnswer() {
     if (choosenGroupe == "'first group'" && answer.value == termEr) {
         check.innerText = good;
+        study.style.display = "none";
+        
             }
             else if (choosenGroupe == "'second group'" && answer.value == termIr) {
                 check.innerText = good;
+                study.style.display = "none";
                     }
                     else if (choosenGroupe == "'third group'" && answer.value == termRe ) {
                         check.innerText = good;
+                        study.style.display = "none";
                             }
                             else {
                                 check.innerHTML = bad + " you need to study!";
