@@ -16,8 +16,8 @@ function randomIndex (list) {
  return  index;
 }
 
-study.style.display = "none";
 
+function randomness(){
     const randomPronom = randomIndex(pronoms);
     const choosenPronom = pronoms[randomPronom];
     const choosenGroupe = groupes[randomIndex(groupes)];
@@ -27,9 +27,11 @@ study.style.display = "none";
     const termRe = terminaisonRe[randomPronom];
 const good = responseGood[randomIndex(responseGood)];
 const bad = responseBad[randomIndex(responseBad)];
-console.log()
+check.innerText ="";
+answer.value = "";
+study.style.display = "none";
 
-function checkAnswer (){
+document.getElementById('buttonCheck').addEventListener("click", function checkAnswer() {
     if (choosenGroupe == "'first group'" && answer.value == termEr) {
         check.innerText = good;
             }
@@ -41,7 +43,10 @@ function checkAnswer (){
                             }
                             else {
                                 check.innerHTML = bad + " you need to study!";
-study.style.display = "table";
+                                study.style.display = "table";
                             }
+})
+
 }
+    
 
