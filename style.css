@@ -3,6 +3,7 @@
 
 body{
     font-size:24px;
+    cursor: url('http://www.patmax.info/curseurs/baguette.cur'),auto;
 }
 .container{
     display: flex;
@@ -82,4 +83,12 @@ thead,tfoot {
 
 #study{
     display:none;
+}
+
+
+a:hover {
+background-color:transparent;
+background-image:url(http://img178.exs.cx/img178/9351/etoile24tb.gif);
+cursor: url(http://www.patmax.info/curseurs/baguette.cur),auto;
+COLOR: #xxxxxx;
 }
