@@ -3,7 +3,7 @@
 
 body{
     font-size:24px;
-    cursor: url('http://www.patmax.info/curseurs/baguette.cur'),auto;
+    cursor: url('http://www.rw-designer.com/cursor-extern.php?id=102135)'),auto;
 }
 .container{
     display: flex;
@@ -86,9 +86,4 @@ thead,tfoot {
 }
 
 
-a:hover {
-background-color:transparent;
-background-image:url(http://img178.exs.cx/img178/9351/etoile24tb.gif);
-cursor: url(http://www.patmax.info/curseurs/baguette.cur),auto;
-COLOR: #xxxxxx;
-}
+
